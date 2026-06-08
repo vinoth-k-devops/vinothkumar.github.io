@@ -66,7 +66,11 @@ nav{position:fixed;top:0;width:100%;z-index:200;padding:0 2rem;background:rgba(8
 .avatar-wrap{position:relative}
 .avatar-ring{width:150px;height:150px;border-radius:50%;padding:2.5px;background:linear-gradient(135deg,var(--blue),var(--cyan),var(--purple));flex-shrink:0}
 .avatar-inner{width:100%;height:100%;border-radius:50%;background:var(--navy2);overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:2.8rem;font-weight:900;color:var(--blue)}
-.avatar-inner img{width:100%;height:100%;object-fit:cover}
+    .avatar-inner img {
+        width: 100%;
+        height: 100%;
+        object-fit: unset
+    }
 .upload-btn{position:absolute;bottom:3px;right:3px;background:var(--blue);color:#fff;border:none;border-radius:50%;width:32px;height:32px;font-size:.85rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(59,130,246,.45);transition:all .2s}
 .upload-btn:hover{background:var(--blue2);transform:scale(1.1)}
 #photo-input{display:none}
@@ -241,7 +245,7 @@ footer span{color:var(--blue)}
       <p class="hero-bio">Building cutting-edge FinTech solutions for banking, trading &amp; finance across global markets — USA, UK, Europe &amp; Asia Pacific. Specialist in Clean Architecture, .NET Full Stack, React, and production-grade Agentic AI systems.</p>
       <div class="hero-btns">
         <a href="#projects" class="btn btn-primary">⚡ View Projects</a>
-        <a href="https://www.linkedin.com/in/vinoth-kumar-9aa292119/" target="_blank" class="btn btn-ghost">💼 LinkedIn</a>
+        <a href="https://www.linkedin.com/in/vinoth-k-ganesan/" target="_blank" class="btn btn-ghost">💼 LinkedIn</a>
         <a href="https://github.com/vinoth-k-devops/" target="_blank" class="btn btn-ghost">⌥ GitHub</a>
         <a href="#contact" class="btn btn-ghost">✉ Contact</a>
       </div>
@@ -249,7 +253,7 @@ footer span{color:var(--blue)}
         <div class="stat-item"><span class="stat-num">11+</span><span class="stat-label">Years Exp.</span></div>
         <div class="stat-item"><span class="stat-num">6+</span><span class="stat-label">Projects</span></div>
         <div class="stat-item"><span class="stat-num">7</span><span class="stat-label">Companies</span></div>
-        <div class="stat-item"><span class="stat-num">4</span><span class="stat-label">Continents</span></div>
+        <!--<div class="stat-item"><span class="stat-num">4</span><span class="stat-label">Continents</span></div>-->
       </div>
     </div>
     <div class="hero-right">
@@ -340,12 +344,13 @@ footer span{color:var(--blue)}
       <div class="sk-card">
         <div class="sk-head"><div class="sk-icon ic-pink">🚀</div><h3>DevOps & Tools</h3></div>
         <div class="tags">
-          <span class="tag tgr">Azure DevOps</span><span class="tag tgr">Jenkins</span><span class="tag tgr">GitHub</span>
-          <span class="tag tgr">Bitbucket</span><span class="tag tgr">Octopus</span><span class="tag tgr">SSIS</span><span class="tag tgr">Jira</span>
+            <span class="tag tgr">AWS</span><span class="tag tgr">Azure</span>
+            <span class="tag tgr">Azure DevOps</span><span class="tag tgr">Jenkins</span><span class="tag tgr">GitHub</span>
+            <span class="tag tgr">Bitbucket</span><span class="tag tgr">Octopus</span><span class="tag tgr">SSIS</span><span class="tag tgr">Jira</span>
         </div>
       </div>
       <div class="sk-card">
-        <div class="sk-head"><div class="sk-icon ic-red">🛡️</div><h3>Monitoring & Security</h3></div>
+        <div class="sk-head"><div class="sk-icon ic-red">🛡️</div><h3>Monitoring & Security & Scan </h3></div>
         <div class="tags">
           <span class="tag tgr">ELK</span><span class="tag tgr">Splunk</span><span class="tag tgr">AppDynamics</span>
           <span class="tag tgr">OpsGenie</span><span class="tag tgr">Fortify</span><span class="tag tgr">SonarQube</span>
@@ -381,7 +386,7 @@ footer span{color:var(--blue)}
           <div class="exp-meta"><span>📅 May 2024 – Present</span><span>📍 Chennai, India</span><span class="exp-badge eb-perm">Permanent</span></div>
           <div class="exp-desc">Designing and delivering enterprise FinTech solutions with modern clean architecture, AI integration, and global cross-functional collaboration for premium clients like Carlyle.</div>
           <ul class="exp-bullets">
-            <li>Architected and developed LPConnect Portal for Carlyle using .NET Core 8, React, and Auth0</li>
+            <li>Architected and developed LPConnect Portal for Carlyle using .NET Core 8 &Aacute; 10, React, and Auth0 Management</li>
             <li>Integrated Strapi CMS for dynamic content management across the portal</li>
             <li>Managed CI/CD pipelines via Azure DevOps for zero-downtime deployments</li>
             <li>Applied Clean Architecture and CQRS patterns for maintainable, scalable codebases</li>
@@ -390,79 +395,87 @@ footer span{color:var(--blue)}
           <div class="exp-stack"><span class="tag tb">.NET Core 8</span><span class="tag tb">React</span><span class="tag tgr">Auth0</span><span class="tag tgr">Strapi</span><span class="tag tgr">Azure DevOps</span><span class="tag tp">Agentic AI</span></div>
         </div>
         <div class="exp-content" id="e2">
-          <div class="exp-title">Senior Technical Lead</div>
-          <div class="exp-company">HCL Technologies</div>
-          <div class="exp-meta"><span>📅 Oct 2021 – Apr 2024</span><span>📍 Chennai, India</span><span class="exp-badge eb-perm">Permanent</span></div>
-          <div class="exp-desc">Led development of critical banking and trading applications for Wells Fargo — one of the world's largest financial institutions — with agile practices and Jenkins-driven CI/CD.</div>
-          <ul class="exp-bullets">
-            <li>Built INDIGO, IRA Brochure, IRA Deceased, GIM Tracker &amp; CHOICE LIBOR platforms</li>
-            <li>Developed Angular 9/12 frontends backed by .NET Core 7 Web APIs</li>
-            <li>Implemented test-driven development with embedded QA teams</li>
-            <li>Resolved production incidents with real-time troubleshooting across global time zones</li>
-          </ul>
-          <div class="exp-stack"><span class="tag tb">.NET Core 7</span><span class="tag tp">Angular 9/12</span><span class="tag tc">VB.NET</span><span class="tag tgr">Jenkins</span><span class="tag tgr">Web API</span></div>
+            <div class="exp-title">Senior Technical Lead</div>
+            <div class="exp-company">HCL Technologies</div>
+            <div class="exp-meta"><span>📅 Oct 2021 – Apr 2024</span><span>📍 Chennai, India</span><span class="exp-badge eb-perm">Permanent</span></div>
+            <div class="exp-desc">Led development of critical banking and trading applications for Wells Fargo — one of the world's largest financial institutions — with agile practices and Jenkins-driven CI/CD.</div>
+            <ul class="exp-bullets">
+                <li>Built INDIGO, IRA Brochure, IRA Deceased, GIM Tracker &amp; CHOICE LIBOR platforms</li>
+                <li>Developed Angular 9/12 frontends backed by .NET Core 7 Web APIs</li>
+                <li>Implemented test-driven development with embedded QA teams</li>
+                <li>Resolved production incidents with real-time troubleshooting across global time zones</li>
+            </ul>
+            <div class="exp-stack"><span class="tag tb">.NET Core 7</span><span class="tag tp">Angular 9/12</span><span class="tag tc">VB.NET</span><span class="tag tgr">Jenkins</span><span class="tag tgr">Web API</span></div>
+            <br />
+            <div class="exp-desc">Maintenance and support of TransAmerica Insurance platform ensuring system stability, script optimization, and quality delivery across a multi-language codebase.</div>
+            <ul class="exp-bullets">
+                <li>Reviewed and enhanced scripts, batch files, and automation workflows</li>
+                <li>Produced detailed technical specifications and optimized program code</li>
+                <li>Implemented TDD and collaborated with QA teams for pre-production sign-off</li>
+            </ul>
+            <div class="exp-stack"><span class="tag tc">VB.NET</span><span class="tag tc">Java</span><span class="tag tgr">Classic ASP</span><span class="tag tb">C#</span><span class="tag tg">SQL</span></div>
         </div>
         <div class="exp-content" id="e3">
-          <div class="exp-title">Senior Software Engineer</div>
-          <div class="exp-company">L&T Construction</div>
-          <div class="exp-meta"><span>📅 Oct 2020 – Oct 2021</span><span>📍 Chennai, India</span><span class="exp-badge eb-cont">Contractor · CIEL HR</span></div>
-          <div class="exp-desc">Developed and maintained enterprise HR Management System handling complex payroll calculations and full-cycle talent acquisition for a large workforce.</div>
-          <ul class="exp-bullets">
-            <li>Built Payroll module — Compensation &amp; Benefits for thousands of employees</li>
-            <li>Developed Talent Acquisition module covering end-to-end recruitment lifecycle</li>
-            <li>Integrated REST APIs with jQuery/JavaScript-driven frontends</li>
-            <li>Participated in innovation hackathons and developer forums</li>
-          </ul>
-          <div class="exp-stack"><span class="tag tb">C#</span><span class="tag tc">VB.NET</span><span class="tag tg">PL/SQL</span><span class="tag tgr">REST API</span><span class="tag tgr">jQuery</span></div>
+            <div class="exp-title">Senior Software Engineer</div>
+            <div class="exp-company">L&T Construction</div>
+            <div class="exp-meta"><span>📅 Oct 2020 – Oct 2021</span><span>📍 Chennai, India</span><span class="exp-badge eb-cont">Contractor · CIEL HR</span></div>
+            <div class="exp-desc">Application support with focus on quality assurance, system improvement proposals, and business requirements analysis for enterprise clients.</div>
+            <ul class="exp-bullets">
+                <li>Analyzed and documented business &amp; functional requirements</li>
+                <li>Designed system improvement proposals including cost analysis</li>
+                <li>Tracked and reported system issues to resolution</li>
+            </ul>
+            <div class="exp-stack"><span class="tag tb">C#</span><span class="tag tc">VB.NET</span><span class="tag tg">SQL Server</span></div>
         </div>
         <div class="exp-content" id="e4">
-          <div class="exp-title">Senior Associate</div>
-          <div class="exp-company">NTT DATA Global Delivery Services</div>
-          <div class="exp-meta"><span>📅 Dec 2019 – Aug 2020</span><span>📍 Chennai, India</span><span class="exp-badge eb-cont">Contractor · Arche Softronix</span></div>
-          <div class="exp-desc">Maintenance and support of TransAmerica Insurance platform ensuring system stability, script optimization, and quality delivery across a multi-language codebase.</div>
-          <ul class="exp-bullets">
-            <li>Reviewed and enhanced scripts, batch files, and automation workflows</li>
-            <li>Produced detailed technical specifications and optimized program code</li>
-            <li>Implemented TDD and collaborated with QA teams for pre-production sign-off</li>
-          </ul>
-          <div class="exp-stack"><span class="tag tc">VB.NET</span><span class="tag tc">Java</span><span class="tag tgr">Classic ASP</span><span class="tag tb">C#</span><span class="tag tg">SQL</span></div>
+            <div class="exp-title">Senior Associate</div>
+            <div class="exp-company">NTT DATA Global Delivery Services</div>
+            <div class="exp-meta"><span>📅 Dec 2019 – Aug 2020</span><span>📍 Chennai, India</span><span class="exp-badge eb-cont">Contractor · Arche Softronix</span></div>
+            <div class="exp-desc">Full-stack development of AlarmNet security monitoring platform plus internal automation tooling — from requirements and architecture through deployment and production support.</div>
+            <ul class="exp-bullets">
+                <li>Developed AlarmNet security alarm monitoring and management system</li>
+                <li>Built PowerShell automated monitoring scripts for proactive alerting</li>
+                <li>Created email/SMS alerting tool using C# and Twilio API</li>
+                <li>Automated user profile sync from Active Directory to SharePoint</li>
+            </ul>
+            <div class="exp-stack"><span class="tag tb">C#</span><span class="tag tg">SQL Server</span><span class="tag tc">PowerShell</span><span class="tag tgr">SSMS</span></div>
         </div>
         <div class="exp-content" id="e5">
-          <div class="exp-title">Senior Associate</div>
-          <div class="exp-company">Cognizant Technology Solutions</div>
-          <div class="exp-meta"><span>📅 May 2019 – Nov 2019</span><span>📍 Chennai, India</span><span class="exp-badge eb-cont">Contractor · Bull IT Services</span></div>
-          <div class="exp-desc">Application support with focus on quality assurance, system improvement proposals, and business requirements analysis for enterprise clients.</div>
-          <ul class="exp-bullets">
-            <li>Analyzed and documented business &amp; functional requirements</li>
-            <li>Designed system improvement proposals including cost analysis</li>
-            <li>Tracked and reported system issues to resolution</li>
-          </ul>
-          <div class="exp-stack"><span class="tag tb">C#</span><span class="tag tc">VB.NET</span><span class="tag tg">SQL Server</span></div>
+            <div class="exp-title">Senior Associate</div>
+            <div class="exp-company">Cognizant Technology Solutions</div>
+            <div class="exp-meta"><span>📅 May 2019 – Nov 2019</span><span>📍 Chennai, India</span><span class="exp-badge eb-cont">Contractor · Bull IT Services</span></div>
+            <div class="exp-desc">Kickstarted career building and maintaining a legacy Insurance Management System for the Singapore market — gaining deep enterprise software lifecycle experience.</div>
+            <ul class="exp-bullets">
+                <li>Maintained Insurance Management System for Singapore financial market</li>
+                <li>Reviewed legacy systems and optimized scripts and batch processes</li>
+                <li>Produced detailed specifications and conducted pre-production testing</li>
+            </ul>
+            <div class="exp-stack"><span class="tag tc">VB6</span><span class="tag tgr">Sybase</span><span class="tag tgr">COBOL</span></div>
         </div>
         <div class="exp-content" id="e6">
-          <div class="exp-title">.NET Developer</div>
-          <div class="exp-company">Workline Pvt Ltd</div>
-          <div class="exp-meta"><span>📅 Jul 2016 – Apr 2019</span><span>📍 Chennai, India</span><span class="exp-badge eb-perm">Permanent</span></div>
-          <div class="exp-desc">Full-stack development of AlarmNet security monitoring platform plus internal automation tooling — from requirements and architecture through deployment and production support.</div>
-          <ul class="exp-bullets">
-            <li>Developed AlarmNet security alarm monitoring and management system</li>
-            <li>Built PowerShell automated monitoring scripts for proactive alerting</li>
-            <li>Created email/SMS alerting tool using C# and Twilio API</li>
-            <li>Automated user profile sync from Active Directory to SharePoint</li>
-          </ul>
-          <div class="exp-stack"><span class="tag tb">C#</span><span class="tag tg">SQL Server</span><span class="tag tc">PowerShell</span><span class="tag tgr">SSMS</span></div>
+            <div class="exp-title">.NET Developer</div>
+            <div class="exp-company">Workline Pvt Ltd</div>
+            <div class="exp-meta"><span>📅 Jul 2016 – Apr 2019</span><span>📍 Chennai, India</span><span class="exp-badge eb-perm">Permanent</span></div>
+            <div class="exp-desc">Developed and maintained enterprise HR Management System handling complex payroll calculations and full-cycle talent acquisition for a large workforce.</div>
+            <ul class="exp-bullets">
+                <li>Built Payroll module — Compensation &amp; Benefits for thousands of employees</li>
+                <li>Developed Talent Acquisition module covering end-to-end recruitment lifecycle</li>
+                <li>Integrated REST APIs with jQuery/JavaScript-driven frontends</li>
+                <li>Participated in innovation hackathons and developer forums</li>
+            </ul>
+            <div class="exp-stack"><span class="tag tb">C#</span><span class="tag tc">VB.NET</span><span class="tag tg">PL/SQL</span><span class="tag tgr">REST API</span><span class="tag tgr">jQuery</span></div>
         </div>
         <div class="exp-content" id="e7">
-          <div class="exp-title">Developer</div>
-          <div class="exp-company">Softlogic Systems</div>
-          <div class="exp-meta"><span>📅 Mar 2015 – May 2016</span><span>📍 Chennai, India</span><span class="exp-badge eb-perm">Permanent</span></div>
-          <div class="exp-desc">Kickstarted career building and maintaining a legacy Insurance Management System for the Singapore market — gaining deep enterprise software lifecycle experience.</div>
-          <ul class="exp-bullets">
-            <li>Maintained Insurance Management System for Singapore financial market</li>
-            <li>Reviewed legacy systems and optimized scripts and batch processes</li>
-            <li>Produced detailed specifications and conducted pre-production testing</li>
-          </ul>
-          <div class="exp-stack"><span class="tag tc">VB6</span><span class="tag tgr">Sybase</span><span class="tag tgr">COBOL</span></div>
+            <div class="exp-title">Developer</div>
+            <div class="exp-company">Softlogic Systems</div>
+            <div class="exp-meta"><span>📅 Mar 2015 – May 2016</span><span>📍 Chennai, India</span><span class="exp-badge eb-perm">Permanent</span></div>
+            <div class="exp-desc">Developed and maintained enterprise HR Management System handling complex internall payroll calculations.</div>
+            <ul class="exp-bullets">
+                <li>Built Payroll module — Compensation &amp; Benefits for thousands of employees</li>
+                <li>Integrated REST APIs with jQuery/JavaScript-driven frontends</li>
+                <li>Participated in innovation hackathons and developer forums</li>
+            </ul>
+            <div class="exp-stack"><span class="tag tb">C#</span><span class="tag tc">Microservices</span><span class="tag tg">PL/SQL</span><span class="tag tgr">REST API</span><span class="tag tgr">jQuery</span></div>
         </div>
       </div>
     </div>
@@ -478,42 +491,48 @@ footer span{color:var(--blue)}
       <div class="sec-line"></div>
     </div>
     <div class="proj-grid">
-      <div class="proj-card"><div class="proj-glow"></div>
-        <div class="proj-top"><span class="proj-client">Carlyle · Hexaware</span><span class="proj-emoji">🏦</span></div>
-        <div class="proj-title">LPConnect Portal</div>
-        <div class="proj-desc">Secure limited partner portal for Carlyle featuring Auth0 authentication, Strapi content management, and real-time financial data. Full CI/CD via Azure DevOps.</div>
-        <div class="proj-stack"><span class="proj-tag">.NET Core 8</span><span class="proj-tag">React</span><span class="proj-tag">TypeScript</span><span class="proj-tag">Auth0</span><span class="proj-tag">Strapi</span><span class="proj-tag">Azure DevOps</span></div>
-      </div>
-      <div class="proj-card"><div class="proj-glow"></div>
-        <div class="proj-top"><span class="proj-client">Wells Fargo · HCL</span><span class="proj-emoji">📊</span></div>
-        <div class="proj-title">INDIGO, IRA & CHOICE LIBOR</div>
-        <div class="proj-desc">Suite of banking & trading applications — IRA Brochure, IRA Deceased handling, GIM Tracker, and LIBOR transition compliance system with Jenkins CI/CD pipelines.</div>
-        <div class="proj-stack"><span class="proj-tag">.NET Core 7</span><span class="proj-tag">Angular 9/12</span><span class="proj-tag">VB.NET</span><span class="proj-tag">Web API</span><span class="proj-tag">Jenkins</span></div>
-      </div>
-      <div class="proj-card"><div class="proj-glow"></div>
-        <div class="proj-top"><span class="proj-client">L&T Construction</span><span class="proj-emoji">👥</span></div>
-        <div class="proj-title">HR Management System</div>
-        <div class="proj-desc">Enterprise payroll and talent acquisition platform covering Compensation & Benefits and end-to-end recruitment lifecycle for a large construction workforce.</div>
-        <div class="proj-stack"><span class="proj-tag">C#</span><span class="proj-tag">VB.NET</span><span class="proj-tag">REST API</span><span class="proj-tag">PL/SQL</span><span class="proj-tag">jQuery</span></div>
-      </div>
-      <div class="proj-card"><div class="proj-glow"></div>
-        <div class="proj-top"><span class="proj-client">NTT DATA</span><span class="proj-emoji">🛡️</span></div>
-        <div class="proj-title">TransAmerica Insurance</div>
-        <div class="proj-desc">Multi-language insurance platform maintenance and support. Script optimization, batch file handling, and rigorous quality-assured go-live processes.</div>
-        <div class="proj-stack"><span class="proj-tag">VB.NET</span><span class="proj-tag">Java</span><span class="proj-tag">Classic ASP</span><span class="proj-tag">C#</span><span class="proj-tag">SQL</span></div>
-      </div>
-      <div class="proj-card"><div class="proj-glow"></div>
-        <div class="proj-top"><span class="proj-client">Workline Pvt Ltd</span><span class="proj-emoji">🔔</span></div>
-        <div class="proj-title">AlarmNet</div>
-        <div class="proj-desc">Security alarm monitoring & alerting platform. Full development lifecycle — requirements capture, Visio architecture, C# development, and production support.</div>
-        <div class="proj-stack"><span class="proj-tag">C#</span><span class="proj-tag">SQL Server 2012</span><span class="proj-tag">PowerShell</span><span class="proj-tag">SSMS</span></div>
-      </div>
-      <div class="proj-card"><div class="proj-glow"></div>
-        <div class="proj-top"><span class="proj-client">Softlogic Systems</span><span class="proj-emoji">🌏</span></div>
-        <div class="proj-title">Insurance Management (Singapore)</div>
-        <div class="proj-desc">Legacy insurance platform for Singapore financial market — system improvements, detailed specs, code production, and controlled pre-production testing.</div>
-        <div class="proj-stack"><span class="proj-tag">VB6</span><span class="proj-tag">Sybase</span><span class="proj-tag">COBOL</span></div>
-      </div>
+        <div class="proj-card">
+            <div class="proj-glow"></div>
+            <div class="proj-top"><span class="proj-client">Carlyle · Hexaware</span><span class="proj-emoji">🏦</span></div>
+            <div class="proj-title">LPConnect Portal</div>
+            <div class="proj-desc">Secure limited partner portal for Carlyle featuring Auth0 authentication, Strapi content management, and real-time financial data. Full CI/CD via Azure DevOps.</div>
+            <div class="proj-stack"><span class="proj-tag">.NET Core 8 &Aacute; 10</span><span class="proj-tag">React</span><span class="proj-tag">SQL Server 2022</span><span class="proj-tag">TypeScript</span><span class="proj-tag">Auth0</span><span class="proj-tag">Strapi</span><span class="proj-tag">Azure DevOps</span></div>
+        </div>
+        <div class="proj-card">
+            <div class="proj-glow"></div>
+            <div class="proj-top"><span class="proj-client">Wells Fargo · HCL</span><span class="proj-emoji">📊</span></div>
+            <div class="proj-title">INDIGO, IRA & CHOICE LIBOR</div>
+            <div class="proj-desc">Suite of banking & trading applications — IRA Brochure, IRA Deceased handling, GIM Tracker, and LIBOR transition compliance system with Jenkins CI/CD pipelines.</div>
+            <div class="proj-stack"><span class="proj-tag">.NET Core 7</span><span class="proj-tag">Angular 9/12</span><span class="proj-tag">VB.NET</span><span class="proj-tag">Web API</span><span class="proj-tag">Jenkins</span></div>
+        </div>
+        <div class="proj-card">
+            <div class="proj-glow"></div>
+            <div class="proj-top"><span class="proj-client">L&T Construction</span><span class="proj-emoji">👥</span></div>
+            <div class="proj-title">Access Management System</div>
+            <div class="proj-desc">Acces and security platform. Full development lifecycle — requirements capture, C# &Aacute; SQL development, and production support.</div>
+            <div class="proj-stack"><span class="proj-tag">C#</span><span class="proj-tag">SQL Server 2012</span><span class="proj-tag">PowerShell</span></div>
+        </div>
+        <div class="proj-card">
+            <div class="proj-glow"></div>
+            <div class="proj-top"><span class="proj-client">NTT DATA</span><span class="proj-emoji">🛡️</span></div>
+            <div class="proj-title">AlarmNet</div>
+            <div class="proj-desc">Security alarm monitoring & alerting platform. Full development lifecycle — requirements capture, Visio architecture, C# development, and production support.</div>
+            <div class="proj-stack"><span class="proj-tag">C#</span><span class="proj-tag">SQL Server 2012</span><span class="proj-tag">PowerShell</span><span class="proj-tag">SSMS</span></div>
+        </div>
+        <div class="proj-card">
+            <div class="proj-glow"></div>
+            <div class="proj-top"><span class="proj-client">Cognizant Technologies</span><span class="proj-emoji">🌏</span></div>
+            <div class="proj-title">Insurance Management (Singapore)</div>
+            <div class="proj-desc">Legacy insurance platform for Singapore financial market — system improvements, detailed specs, code production, and controlled pre-production testing.</div>
+            <div class="proj-stack"><span class="proj-tag">VB6</span><span class="proj-tag">Sybase</span><span class="proj-tag">COBOL</span></div>
+        </div>
+        <div class="proj-card">
+            <div class="proj-glow"></div>
+            <div class="proj-top"><span class="proj-client">Workline Pvt Ltd</span><span class="proj-emoji">🔔</span></div>
+            <div class="proj-title">HR Management System</div>
+            <div class="proj-desc">Enterprise payroll and talent acquisition platform covering Compensation & Benefits and end-to-end recruitment lifecycle for a large construction workforce.</div>
+            <div class="proj-stack"><span class="proj-tag">C#</span><span class="proj-tag">VB.NET</span><span class="proj-tag">REST API</span><span class="proj-tag">PL/SQL</span><span class="proj-tag">jQuery</span></div>
+        </div>
     </div>
   </div>
 </section>
@@ -566,7 +585,7 @@ footer span{color:var(--blue)}
         <div class="clinks">
           <a href="mailto:vinothbluedragon@gmail.com" class="clink"><div class="clink-icon" style="background:rgba(59,130,246,.12)">📧</div><div><div class="clink-label">Email</div><div class="clink-val">vinothbluedragon@gmail.com</div></div></a>
           <a href="tel:9500031066" class="clink"><div class="clink-icon" style="background:rgba(16,185,129,.1)">📱</div><div><div class="clink-label">Phone</div><div class="clink-val">9500031066 / 8608031066</div></div></a>
-          <a href="https://www.linkedin.com/in/vinoth-kumar-9aa292119/" target="_blank" class="clink"><div class="clink-icon" style="background:rgba(59,130,246,.12)">💼</div><div><div class="clink-label">LinkedIn</div><div class="clink-val">vinoth-kumar-9aa292119</div></div></a>
+          <a href="https://www.linkedin.com/in/vinoth-k-ganesan/" target="_blank" class="clink"><div class="clink-icon" style="background:rgba(59,130,246,.12)">💼</div><div><div class="clink-label">LinkedIn</div><div class="clink-val">vinoth-kumar-9aa292119</div></div></a>
           <a href="https://github.com/vinoth-k-devops/" target="_blank" class="clink"><div class="clink-icon" style="background:rgba(139,92,246,.1)">⌥</div><div><div class="clink-label">GitHub</div><div class="clink-val">github.com/vinoth-k-devops</div></div></a>
         </div>
       </div>
@@ -576,8 +595,8 @@ footer span{color:var(--blue)}
         <div class="info-row"><span class="info-key">Date of Birth</span><span class="info-val">18 September 1992</span></div>
         <div class="info-row"><span class="info-key">Nationality</span><span class="info-val">Indian</span></div>
         <div class="info-row"><span class="info-key">Languages</span><span class="info-val">Tamil, English</span></div>
-        <div class="info-row"><span class="info-key">Location</span><span class="info-val">Chennai – 600123, TN</span></div>
-        <div class="info-row"><span class="info-key">Methodology</span><span class="info-val">Agile (Scrum) · Waterfall</span></div>
+        <div class="info-row"><span class="info-key">Location</span><span class="info-val">Chennai – 600123, TN, IN</span></div>
+        <div class="info-row"><span class="info-key">Methodology</span><span class="info-val">Agile (Scrum)</span></div>
         <div class="info-row"><span class="info-key">Availability</span><span class="info-val avail">✓ Open to work</span></div>
       </div>
     </div>
